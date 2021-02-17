@@ -1,0 +1,272 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main{
+  height: 2215px;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url("IMG_0083.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(46,46,46,0.1);
+  color: black;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  margin-bottom: 25px;
+  color: white;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+.fab {
+  margin-right: 8px;
+}
+.facebook {
+  background-color:  #3b5998;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.instagram {
+  background-color: #9932CC
+}
+
+.header {
+  height: 45px;
+  background-color: rgba(34, 49, 52, 0.9);
+  width: 100%;
+  position: fixed;/*画面上に要素を固定する*/
+  top: 0;/*位置*/
+  z-index: 10;/*要素の重なりの順序を指定する10-1-0*/
+}
+
+.header-left li{
+    float: left;
+  /*float-leftヘッダーを横並びに*/
+}
+
+.header-left a{
+  line-height: 45px;
+  padding: 20px;
+  top: 0;
+  z-index: 10;
+  color: white;
+}
+
+.header-right li {
+  float: left;
+}
+
+.header-right a {
+  line-height: 45px;
+  top: 0;
+  z-index: 10;
+  color: white;
+  margin-left:25px;
+}
+
+.second-wrapper {
+  padding-bottom: 2070px;
+  padding-left: 5%;
+  background-color: #f7f7f7;
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #5f5d60;
+}
+
+.section-title {/*Background title*/
+  margin-bottom: 50px;
+  border-bottom: 2px solid #dee7ec;
+  text-align: center;
+}
+
+.background {
+  float: left;
+  line-height: 40px;
+  margin: 20px
+}
+
+.background:hover {
+  opacity:1;
+}
+
+.background-picture {
+  position:relative;/*違う要素を重ねたいとき他の要素とリンク付(親)*/
+  float: left;
+  margin-right: 10px;
+}
+
+.backgrounds a {
+  position:absolute;/*違う要素を重ねたいとき他の要素とリンク付（子)*/
+  top: 50%;
+  left: 45%;
+  color: white;
+}
+.background p {
+
+}
+.text-contents {
+  margin: 10px;
+  display: inline-block;
+}
+
+.message-wrapper{
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+}
+.container h3{
+  margin-top:200px;
+}
+
+.message{/*ボタン設定*/
+  background-color: #5dca88;
+  padding: 15px 40px;
+  cursor: pointer; /*カーソルの種類を変える*/
+  box-shadow: 0px 7px #1a7940;/*ボックスに影を追加、水平方向、垂直方向、色の順番*/
+  margin-top: 50px;
+}
+
+.message:active {/*ボタンがクリックされた時にアクションをつける*/
+  box-shadow: none;/*影を消す*/
+  position:relative;/*position: relative;はposition: absolute;の基準位置を決めるために使っていましたが、要素の位置を変更するためにも使うことが出来ます。
+position: relative;をtopやleftと併用すると、その要素を本来の位置からずらせます。*/
+  top:7px;
+}
+
+.question-modal-wrapper {/*モーダル部分開始*/
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;
+
+}
+
+.modal {/*質問ボックス*/
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+}
+
+.fa-times {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: rgba(128, 128, 128, 0.46);
+  cursor: pointer;
+}
+
+#question-form{
+  width: 100%;
+}
+
+#question-form h2{
+  color: #5f5d60;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+#question-form input{
+  width: 320px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding: 12px 12px;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
+}
+
+#question-form textarea{
+  width: 320px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding: 12px 12px;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
+}
+
+#submit-btn {
+  display: inline-block;
+  padding: 14px 140px;
+  background-color: #5dca88;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
+}/*モーダル部分終了*/
+
+.footer {
+  height: 100px;
+  background-color: #ceccf3;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.footer-logo{
+  font-size: 25px;
+}
+
+.footer-list{
+  float: right;
+
+}
+
+.footer-list li{
+  padding-bottom: 10px;
+}
